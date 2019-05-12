@@ -1,0 +1,26 @@
+{{#blog}}
+    <div class="container-fluid mt-5">
+        <div class="all-posts">
+            <h2 class="py-3 text-white">Recent posts</h2>
+        </div>
+        <div class="row justify-content-start my-0">
+            {{#grouped_each 3 this}}
+                {{#each this}}
+                    {{#if blog_entry.blog_title}}
+                        <div class="col-3">
+                            <div class="card shadow-lg rounded" style="max-height: 300px;">
+                                <div class="img-bg" style="background-image: url({{blog_entry.image}})"></div>
+                                <div class="card-body">
+                                    <a href="/blog/{{page_slug}}">
+                                        <h4 class="card-title text-success mb-0">{{blog_entry.blog_title}}</h4>
+                                    </a>
+                                    <p class="text-black-50 sm-text mt-0 pt-0">{{blog_entry.published_on}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    {{/if}}
+                {{/each}}
+            {{/grouped_each}}
+        </div>
+    </div>
+{{/blog}}

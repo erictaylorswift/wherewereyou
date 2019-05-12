@@ -1,0 +1,113 @@
+@import 'variables/*';
+@import 'elements/*';
+@import '../../node_modules/bootstrap/*';
+
+body {
+	background-color: $white;
+	color: $black;
+	padding: 0;
+	margin: 0;
+}
+
+article {
+	padding: 3% 0;
+}
+
+hr {
+	border-bottom: $white;
+}
+
+.nav_bar {
+	-webkit-box-shadow: 0px 8px 18px -7px rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 8px 18px -7px rgba(0, 0, 0, 0.8);
+	background-color: $color1;
+	position: absolute;
+	top: 0;
+	height: 80px;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.center_block {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.bottom_block {
+	text-align: center;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.screen {
+	height: 100vh;
+	position: relative;
+
+	&.half {
+		height: 50vh;
+	}
+
+	&.color1 {
+		background-color: $color1;
+	}
+
+	&.color2 {
+		background-color: $color2;
+	}
+}
+
+.title_block {
+	text-align: center;
+}
+
+.content_block {
+	padding: 0 25%;
+
+	p {
+		text-align: center;
+	}
+}
+
+// animations
+.vertical_pulsate {
+	animation: vertical_pulsate 3s infinite;
+}
+
+@keyframes vertical_pulsate {
+	0% {
+		transform: translate(-50%, 0px);
+	}
+	80% {
+		transform: translate(-50%, 0px);
+	}
+	85% {
+		transform: translate(-50%, 10px);
+	}
+	90% {
+		transform: translate(-50%, 0px);
+	}
+	95% {
+		transform: translate(-50%, 10px);
+	}
+	100% {
+		transform: translate(-50%, 0px);
+	}
+}
+
+//typography
+.sm-text {
+	font-size: 12px;
+}
+
+p {
+	strong {
+		color: $black;
+		font-weight: 600;
+		font-size: x-large;
+	}
+}

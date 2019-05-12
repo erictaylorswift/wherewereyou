@@ -1,0 +1,7 @@
+{
+	"project_name": "enduro_intro",
+	"project_slug": "ei",
+	"babel": {
+		"presets": [ "env" ]
+	}
+}

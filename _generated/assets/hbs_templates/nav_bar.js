@@ -1,0 +1,3 @@
+define(["handlebars"], function(Handlebars) { return Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<nav class=\"navbar fixed-top navbar-light bg-gradient-light shadow py-3\">\n    <a href=\"/\" class=\"navbar-brand\">\n        <img src=\"/assets/img/whereyou.png\" alt=\"where_were_you_logo\" width=\"40px\" height=\"40px\"\n            class=\"d-inline-block align-center mr-3\">\n        Where were you?\n    </a>\n</nav>";
+},"useData":true}); });

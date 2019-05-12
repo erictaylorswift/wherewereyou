@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+{{>head}}
+
+<body class="bg-gradient-st_pete">
+    {{>nav_bar}}
+    <main>
+        <div class="container my-5">
+            <div class="container-fluid mt-5">
+                <article>
+                    <div class="container">
+                        <div class="container mt-5">
+                            <div class="row justify-content-center">
+                                <div class="col mt-5">
+                                    <h1 class="text-dark display-3 mb-0 blog_title">
+                                        <strong>Where were you</strong> {{blog_title}}
+                                    </h1>
+                                    <p class="headline text-black-50">{{published_on}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card shadow-lg" style="max-width: 700px; margin: 0 auto;">
+                                    {{#if image}}
+                                        <img src="{{image}}" alt="" class="card-img-top">
+                                    {{/if}}
+                                    <div class="card-body">
+                                        <p class="lead ml-3 text-dark" id="blog_text">{{{marked_blog_text}}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            {{> blog-list}}
+        </div>
+    </main>
+</body>
+
+</html>
