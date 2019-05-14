@@ -7,5 +7,6 @@
 	$published_on_type: 'date',
 	published_on: 'Sunday, 12 May, 2019',
 	$published_on_value: '2019-05-12',
-	$marked_doc_hidden: true
+	$marked_doc_hidden: true,
+	$marked_blog_text_hidden: true
 })

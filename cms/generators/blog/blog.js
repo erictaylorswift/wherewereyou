@@ -7,5 +7,6 @@
 	$published_on_type: 'date',
 	published_on: '',
 	$published_on_value: '',
-	$marked_doc_hidden: true
+	$marked_doc_hidden: true,
+	$marked_blog_text_hidden: true
 })
