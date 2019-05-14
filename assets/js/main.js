@@ -12,6 +12,9 @@ require([ 'jquery' ], function($) {
 	});
 
 	$('a').click(function(a) {
-		ga('send', 'Links', 'Clicks', a.target.innerText);
+		gtag('event', 'click', {
+			event_category: 'links',
+			event_label: a.target.innerText
+		});
 	});
 });
